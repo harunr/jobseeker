@@ -1,0 +1,1191 @@
+@charset "utf-8";
+
+/*
+	Title:		[talentfizz]
+	Date:		April 30, 2011
+--------------------------------------------------------------
+			
+*/
+
+	/* COMMON ELEMENTS */
+	
+body{margin:0;padding:0px;background:#47433e;font-family:Arial;font-size:12px;color:#827f79}
+.clear:after,.main-contents:after,.feature-area:after,.pagelinks:after,.photo-holder:after,.mid-striped-box-wrap:after,.second-col-mainbox-wrap:after,.rounded-box-wrap:after,.left-purple-styled-box-wrap:after,.purple-styled-box:after,.small-boxes-container:after,.small-box-wrap:after,.rounded-white-box:after,.tab-contents:after,.expanded-contents:after,.expanded-container:after,.rounded-white-common-box:after,.single-column-contents:after,.login-step3-main-box-wrap:after,.login-step3-main-box:after,.step3-main-box-contents:after,.section-boxes:after,.billing-info:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{border:0}
+a,input,select,textarea{outline:none}
+
+.FL{float:left;width:auto}
+.FR{float:right;width:auto}
+.CB{clear:both}
+	/* COMMON ELEMENTS */
+
+.all-content-wrapper{min-width:1000px;width:auto!important;position:relative;z-index:1}
+
+	/* BEGIN HEADER */
+.top-bar-wrapper{min-width:1074px;width:auto!important;background:#312e2a url(../images/topbar-x.gif) repeat-x;position:relative;z-index:5}
+.top-bar{clear:both;width:1000px;min-height:40px;margin:0 auto}
+* html .top-bar{height:auto !important;height:40px}
+
+.top-bar-left{float:left;width:502px;padding:11px 0 0 8px;font-size:13px;line-height:18px;color:#918e87}
+.top-bar-links{float:right;width:490px}
+.top-bar-links a{display:block;float:right;width:auto;height:34px;margin:3px 0 0;line-height:34px;color:#edebe8;text-decoration:none}
+.top-bar-links a.contact-no{background:url(../images/icon-contact-sprite.gif) no-repeat 0 0;padding-left:25px;font-size:12px;font-weight:700}
+.top-bar-links a.send-mail{background:url(../images/icon-message-sprite.gif) no-repeat 0 0;margin-left:17px;padding-left:35px}
+.top-bar-links a.signin-signout{background:url(../images/icon-lock-sprite.gif) no-repeat 0 0;margin-left:17px;padding-left:30px}
+.top-bar-links a:hover{background-position:0 -100px;color:#b4ce1b}
+
+.header-wrapper{clear:both;min-width:1074px;width:auto!important;background:#fffffe url(../images/header-main-x.gif) repeat-x left bottom;position:relative;z-index:3}
+.header{clear:both;width:1000px;min-height:95px;margin:0 auto}
+* html .header{height:auto !important;height:95px}
+
+.logo-and-feedback{clear:both;width:1000px;overflow:hidden}
+.logo{float:left;width:auto;margin:0}
+.feedback-btn{display:block;float:right;width:auto;text-decoration:none;color:#fff;font-size:13px;line-height:33px;font-weight:700}
+.feedback-btn img{float:left;width:auto;margin:0}
+.feedback-btn span{display:block;float:left;width:auto;height:46px;padding:0 2px;background:url(../images/feedback-btn-x.png) repeat-x;cursor:pointer}
+
+.main-nav{float:left;width:1000px;height:30px;margin:-11px 0 0;position:relative}
+.main-nav ul{width:725px;height:47px;margin:0;padding:0;position:absolute;left:273px;top:0;list-style:none}
+.main-nav li{float:left;width:auto;height:47px;margin-right:3px;position:relative}
+.main-nav li a{display:block;float:left;width:100px;height:32px;background:url(../images/main-nav-item-bg-sprite.png) no-repeat 0 0;text-align:center;font-size:12px;line-height:32px;color:#6d6761;text-decoration:none;font-weight:700;position:relative;z-index:3}
+.main-nav li a:hover,.main-nav li.active a,.main-nav li.dropdown a{height:47px;background-position:0 -100px;color:#fff}
+
+.main-nav li ul{width:136px;height:auto;padding-top:16px;background:url(../images/main-nav-dropdown-x.png) repeat-x left bottom;left:-99999px;top:32px;z-index:2}
+.main-nav li.dropdown ul{left:-18px}
+.main-nav li li{height:auto;line-height:20px;margin:8px 0 0}
+.main-nav li li a,.main-nav li.dropdown li a{width:110px;height:auto;padding:0 13px;background:none;text-align:left;line-height:20px;color:#fff}
+.main-nav li.dropdown li a:hover,.main-nav li.dropdown li.active a{height:auto;background:#837e72}
+.main-nav li li.last{position:absolute;height:16px;line-height:14px;margin:0;left:0;bottom:-16px}
+.main-nav li li.last img{float:left;width:auto;margin:0}
+
+.jobseeker-nav ul,.employer-nav ul{width:622px;left:376px}
+.jobseeker-nav li a:hover,.jobseeker-nav li.active a,.jobseeker-nav li.dropdown a{height:47px;background-position:0 -200px;color:#fff}
+.employer-nav li a:hover,.employer-nav li.active a,.employer-nav li.dropdown a{height:47px;background-position:0 -300px;color:#fff}
+	/* END HEADER */
+	
+	/* BEGIN CONTENTS */
+.main-content-wrapper{clear:both;min-width:1074px;width:auto!important;border-top:2px solid #fffffe;background:#edebe8 url(../images/main-container-x.gif) repeat-x;position:relative;z-index:1}
+.main-inner-wrapper{clear:both;min-width:1074px;width:auto!important;background:url(../images/main-inner-wrapper-x.gif) repeat-x left bottom}
+.main-contents{clear:both;width:993px;min-height:400px;margin:0 auto;padding:26px 0 14px}
+* html .main-contents{height:auto !important;height:400px}
+.pages-main{width:1074px}
+
+.flash-area{clear:both;width:993px;height:364px;overflow:hidden}
+.flash-area img{float:left;width:auto;margin:0}
+
+.welcome-and-login-area{clear:both;width:993px;background:url(../images/divider-with-tab-x.gif) repeat-x;overflow:hidden}
+.welcome-area{float:left;width:487px;margin:0;padding:0 0 0 4px}
+.login-area{float:left;width:502px;margin:0}
+.section-tab{clear:both;width:91px;height:21px;padding:2px 0 0;background:url(../images/sections-tab-bg.png) no-repeat;text-align:center;font-size:11px;color:#fff;line-height:20px;font-weight:700}
+.welcome-txt{clear:both;width:455px;text-align:justify;padding-top:25px}
+.welcome-txt a,.feature-description a{color:#93b210}
+.welcome-txt a:hover,.feature-description a:hover{text-decoration:none}
+
+.single-divider{clear:both;height:24px;background:url(../images/single-divider-x.gif) repeat-x left bottom}
+
+.signup-login-box-wrapper{clear:both;width:502px;margin:26px 0 0;overflow:hidden}
+.signup-login-box-left{float:left;width:18px;height:124px;background:url(../images/signup-login-box-left.png) no-repeat}
+.signup-login-box-right{float:right;width:17px;height:124px;background:url(../images/signup-login-box-right.png) no-repeat}
+
+.signup-login-box-main{float:left;width:461px;height:119px;padding:5px 0 0 6px;background:url(../images/signup-login-box-x.png) repeat-x}
+.signup-login-box-main form{margin:0;padding:0}
+.signup-login-left{float:left;width:367px;margin-top:20px}
+.signup-login-right{float:right;width:94px;margin-top:4px}
+
+.signup-login-row{clear:both;width:367px;overflow:hidden}
+.signup-login-entires{float:left;width:165px;margin-right:11px}
+.signup-login-entires span{display:block;clear:both;font-size:12px;line-height:18px;color:#99958c;font-weight:700}
+.signup-login-entires div{clear:both;width:145px;height:18px;margin:4px 0 0;padding:4px 10px 6px;background:url(../images/text-entry-field.png) no-repeat}
+.signup-login-entires div input{float:left;width:145px;height:18px;margin:0;padding:0;border:0;background:none;line-height:18px;font-size:12px;font-weight:700;color:#ccc;font-family:Arial}
+
+.forgot-password{clear:both;width:333px;text-align:right;padding:10px 0 0}
+.forgot-password a{font-size:12px;line-height:18px;color:#93b210}
+.forgot-password a:hover{text-decoration:none}
+
+.signup-login-right input,.signup-btn{float:left;width:77px;height:29px;border:0;margin:16px 0 0;padding:0;background:url(../images/login-signup-btn-sprite.png) no-repeat 0 0;cursor:pointer}
+.signup-btn{background-position:0 -100px}
+
+.feature-area{clear:both;width:1000px;margin-top:28px;background: url(../images/feature-y.gif) repeat-y}
+.feature-area h3{clear:both;margin:0;padding:0;color:#827f79;font-size:18px;line-height:22px}
+.feature-col{float:left;width:308px;padding:0 12px}
+.first-col{width:313px;padding:0 12px 0 6px}
+.feature-box{clear:both;width:304px;min-height:104px;margin-top:10px;border:2px solid #fffffe;background:#e3e0dc;position:relative}
+* html .feature-box{height:auto !important;height:104px}
+
+.left-top,.right-top,.left-bottom,.right-bottom{width:10px;height:10px;background:url(../images/white-box-corners-sprite.gif) no-repeat 0 0;line-height:8px;font-size:8px;position:absolute;left:-2px;top:-2px;z-index:3}
+
+.right-top{background-position:0 -100px;left:auto;right:-2px}
+.left-bottom{background-position:0 -200px;top:auto;bottom:-2px}
+.right-bottom{background-position:0 -300px;top:auto;left:auto;right:-2px;bottom:-2px}
+
+.feature-box-contents{clear:both;width:304px;overflow:hidden}
+.box-contents-left{float:left;width:151px}
+.box-contents-left div{float:left;width:151px;height:104px;overflow:hidden}
+.box-contents-right{float:right;width:141px;padding-left:12px}
+.box-contents-right h4{clear:both;margin:0;padding:10px 0 0;font-size:13px;line-height:18px;color:#6d6761}
+.right-description{clear:both;width:134px;padding:6px 0;font-size:12px;line-height:15px;color:#6d6761} 
+.box-contents-left img{float:left;width:auto;margin:0}
+.demo-txt{clear:both;padding-left:15px;padding-top:10px;overflow:hidden}
+.feature-description{clear:both;width:308px;text-align:justify;padding-top:12px}
+
+.pagelinks{float:left;width:308px;margin:5px 0 -5px;padding-right:5px;position:relative;zoom:1.0}
+.pagelinks a{display:block;float:right;width:auto;margin-left:8px;padding:0 5px;background:#d1cdc7;font-size:11px;font-weight:700;line-height:17px;color:#fff;text-decoration:none}
+.pagelinks a:hover,.pagelinks a.active{background:#b5b2a9}
+
+.client-list-area{clear:both;width:993px;margin-top:30px;background:url(../images/divider-with-tab-x.gif) repeat-x;overflow:hidden}
+.client-list-area .section-tab{margin-left:4px}
+.client-list-row{clear:both;width:999px;padding:18px 0 12px;background:url(../images/client-list-y.gif) repeat-y;overflow:hidden}
+.client-list-row ul{float:left;width:122px;margin:0;padding:0 10px;list-style:none}
+.client-list-row li{clear:both;padding-left:7px;line-height:14px;background:url(../images/small-bullet.gif) no-repeat 0 5px;font-size:11px;font-weight:700;color:#827f79}
+.client-list-row li a{color:#827f79;text-decoration:none}
+.client-list-row li a:hover{text-decoration:underline}
+	/* END CONTENTS */
+	
+	/* BEGIN JOBSEEKER DASHBOARD CONTENTS */
+.js-dashboard,.employer-dashboard{padding-bottom:36px}
+.col3-row,.col2-row{float:left;width:1074px;margin:10px 0 0;background:url(../images/col3-rows-divider-y.gif) repeat-y}
+.col2-row{background:url(../images/col2-rows-divider-y.gif) repeat-y}
+* html .js-dashboard{padding:0}
+* html .js-dashboard .col3-row{margin:36px 0}
+.left-column{float:left;width:325px}
+.mid-column{float:left;width:420px;margin-top:28px}
+.right-column{float:right;width:315px;padding-left:13px}
+
+.col3-mainbox-container{clear:both;width:315px;overflow:hidden}
+.col3-mainbox-top,.col3-mainbox-bottom{float:left;width:auto;margin:0}
+.col3-mainbox-contents{clear:both;width:298px;padding:2px 10px 0 7px;background:url(../images/col3-box-y.png) repeat-y;position:relative}
+
+.headings{clear:both;width:238px;height:30px;margin:0px 0 0 17px;padding:0 11px;border:1px solid #fffffe;background:#b5b2a9 url(../images/headings-x.gif) repeat-x;line-height:30px;font-size:15px;font-weight:700;color:#fff;overflow:hidden}
+
+.name-and-photo-area,.up-down-scroller,.filter-by,.left-bottom-info,.employer-active-profile .btn-links,.filterby-panel,.payment-details,.source-of-funds,.title-area,.choose-btn-wrap,.employer-analytics .btn-links,.customizations-head,.modal-top-txt{background:url(../images/divider-line-x.gif) repeat-x left bottom}
+.name-and-photo-area{clear:both;width:268px;margin-left:15px;padding:12px 0 16px;overflow:hidden}
+.name-and-photo-area span{display:block;clear:both;font-size:17px;line-height:20px;color:#ff7900;font-weight:700}
+
+.photo-area{clear:both;width:159px;height:111px;margin:10px 0 0 5px;padding:6px 0 0 19px;overflow:hidden}
+.photo-area,.item-img-holder{background:url(../images/photo-holder-back-bracks-sprite.png) no-repeat 0 0}
+.photo-holder{clear:both;width:136px;height:100px;border:2px solid #fff;position:relative}
+
+.photo-holder .left-top,.photo-holder .right-top,.photo-holder .left-bottom,.photo-holder .right-bottom{background:url(../images/white-box-corners-sprite2.gif) no-repeat 0 0 }
+.photo-holder .right-top{background-position:0 -100px}
+.photo-holder .left-bottom{background-position:0 -200px}
+.photo-holder .right-bottom{background-position:0 -300px}
+.photo-frame{clear:both;width:136px;height:100px;overflow:hidden;position:relative;z-index:1}
+
+.latest-feeds-area{clear:both;width:268px;padding:8px 0 3px;margin-left:17px;overflow:hidden}
+.latest-feeds-area .headings{margin-left:0}
+.latest-feeds-container{clear:both;width:268px;height:314px;margin-top:5px;overflow:hidden}
+.latest-feeds,.messages-box-wrap{clear:both;width:268px;overflow:hidden}
+.latest-feeds-box,.messages-box{clear:both;width:234px;height:65px;margin-top:3px;padding:13px 16px 5px 14px;background:url(../images/striped-small-back-box.png) no-repeat;overflow:hidden;position:relative;z-index:2}
+* html .latest-feeds-box{position:static}
+* html .messages-box{position:static}
+.latest-feeds-box-left,.messages-box-left{float:left;width:94px;margin-top:1px}
+.latest-feeds-box-left div,.messages-box-left div{clear:both;width:83px;height:49px;border:1px solid #d7d7d7;background:#fffffe;text-align:center;overflow:hidden}
+.latest-feeds-box-left div img,.messages-box-left div img{margin:0}
+.latest-feeds-box-right,.messages-box-right{float:right;width:138px;font-size:11px;line-height:13px;color:#827f79}
+
+.feeds-bottom-links{float:left;width:258px;margin:-8px 0 0;padding-left:8px;position:relative;z-index:1}
+.feeds-bottom-links-left,.feeds-bottom-links-right{float:left;width:10px;margin:0;height:27px}
+.feeds-bottom-links-left,.feeds-bottom-links-right,.feeds-bottom-links ul{background:url(../images/latest-feeds-bottom-links-bgs-sprite.png) repeat-x 0 0}
+.feeds-bottom-links-left{background-position:0 -100px}
+.feeds-bottom-links-right{background-position:0 -200px}
+
+.feeds-bottom-links ul{float:left;width:auto;height:27px;margin:0;padding:0;list-style:none}
+.feeds-bottom-links li{float:left;width:auto;padding:0 12px;background:url(../images/feeds-link-divider.gif) no-repeat right 3px;font-size:11px;line-height:18px}
+.feeds-bottom-links li.first-item{padding-left:8px}
+.feeds-bottom-links li.last-item{background:none}
+
+.feeds-bottom-links li a{color:#fff;text-decoration:none}
+.feeds-bottom-links li a:hover{color:#6d6761}
+
+.up-down-scroller{clear:both;width:170px;overflow:hidden;padding-left:98px;padding-top:2px;margin-left:15px;background-position:left top}
+.up-down-scroller a{display:block;float:left;width:22px;height:14px;margin:6px 27px 0 0}
+.up-down-scroller a.down-scroller{background:url(../images/down-scroller-arrow-sprite.png) no-repeat 0 0}
+.up-down-scroller a.up-scroller{background:url(../images/up-scroller-arrow-sprite.png) no-repeat 0 0}
+.up-down-scroller a:hover{background-position:0 -100px}
+
+.mid-striped-box-wrap{clear:both;width:382px;margin:22px 0 0;padding:0 0 0 25px;position:relative}
+.mid-striped-box-corner{float:left;width:auto;margin:0}
+.mid-striped-box{float:left;width:316px;height:87px;padding:0 2px 0 33px;background:url(../images/medium-striped-box-x.png) repeat-x;position:static;z-index:1}
+.indication-arrow{position:absolute;left:16px;top:8px;z-index:5}
+.mid-striped-box strong{display:block;float:left;width:262px;padding-top:32px;font-size:15px;line-height:20px;color:#6d6761}
+.mid-striped-box strong a{text-decoration:none;color:#6d6761}
+.mid-striped-box strong span,.mid-striped-box strong a span{color:#93b210;text-decoration:none;cursor:pointer}
+.mid-striped-box a.icons{display:block;float:right;width:50px;height:49px;margin:17px 0 0}
+.mid-striped-box a.message{background:url(../images/icon-medium-message-sprite.png) no-repeat 0 0}
+.mid-striped-box a.talent-pools{background:url(../images/icon-medium-people-sprite.png) no-repeat 0 0}
+.mid-striped-box a.profile{background:url(../images/icon-medium-person-sprite.png) no-repeat 0 0}
+.mid-striped-box a.cv{background:url(../images/icon-medium-cv-sprite.png) no-repeat 0 0}
+.mid-striped-box a.pool-request{background:url(../images/icon-medium-poolrequest-sprite.png) no-repeat 0 0}
+.mid-striped-box a.matches{background:url(../images/icon-medium-matches-sprite.png) no-repeat 0 0}
+
+.mid-striped-box a.active,.mid-striped-box a.icons:hover{background-position:0 -100px}
+
+.widgets-panel{clear:both;width:298px;margin-left:15px;padding-bottom:25px;overflow:hidden}
+.widgets{clear:both;width:auto;overflow:hidden}
+.widgets img{margin:0}
+.calendar{width:245px;height:123px;margin:11px 0 0 13px}
+.weather{width:181px;height:180px;margin:-8px 0 0 33px}
+.calculator{width:146px;height:212px;margin:15px 0 0 64px}
+	/* END JOBSEEKER DASHBOARD CONTENTS */
+	
+	/* BEGIN EMPLOYER DASHBOARD CONTENTS */
+* html .employer-dashboard{padding:0}
+* html .employer-dashboard .col3-row{margin:36px 0 36px}
+
+.employer-dashboard	.photo-area{background-position:0 -200px}
+.employer-dashboard .name-and-photo-area span{color:#936bb2}
+.employer-dashboard .mid-column{margin-top:4px}
+.employer-dashboard .mid-main-box .up-down-scroller,.talent-pools-overview{background:url(../images/divider-line-x.gif) repeat-x}
+.employer-dashboard .mid-main-box .up-down-scroller{width:219px;padding:1px 0 9px 136px;margin:0;background-position:left bottom}
+
+.left-list-area{clear:both;width:298px;padding:8px 0 3px;overflow:hidden}
+.left-list-area ul{float:left;width:298px;margin:0;padding:10px 0 0;list-style:none}
+.left-list-area li{float:left;width:298px;margin-top:2px;line-height:18px;font-size:12px}
+.left-list-area li a{display:block;float:left;width:279px;padding:0 0 0 19px;line-height:18px;font-size:12px;color:#827f79;text-decoration:none;font-weight:700}
+.left-list-area li a:hover,.left-list-area li li.selected a{background:#e3e0dc}
+.left-list-area li ul{padding:0}
+.left-list-area li li a{width:244px;font-weight:400;padding-left:54px}
+
+.tallet-pools-list-container,.js-feeds-left-lists{clear:both;width:298px;height:314px;margin-top:5px;overflow:hidden}
+.mid-main-box-wrap{clear:both;width:398px;margin:16px 0 0 13px;overflow:hidden}
+.mid-main-box-corner{float:left;width:auto;margin:0}
+.mid-main-box{clear:both;width:355px;padding:0 23px 0 20px;background:url(../images/mid-main-box-y.png) repeat-y;overflow:hidden}
+
+.mid-title-bar{clear:both;width:329px;height:29px;padding:0 12px;margin-left:1px;background:#936bb2 url(../images/purple-title-bar-x.gif) repeat-x;line-height:29px;font-size:15px;color:#fff;font-weight:700}
+
+.talent-pools-overview{clear:both;width:355px;padding:15px 0;background-position:left bottom;overflow:hidden}
+.talent-pools-overview-list{clear:both;width:355px;height:106px;overflow:hidden}
+.talent-pools-overview ul{clear:both;width:355px;margin:0;padding:0;list-style:none;overflow:hidden}
+.talent-pools-overview li{float:left;width:343px;padding-left:12px;font-size:15px;line-height:18px;color:#6d6761;font-weight:700}
+.talent-pools-overview li span{display:block;float:left;width:40px;color:#b4ce1b}
+.talent-pools-overview li span a{color:#b4ce1b;text-decoration:none}
+.talent-pools-overview li dfn{display:block;float:left;width:300px;font-style:normal}
+
+.info-message{clear:both;width:355px;padding-top:10px;font-size:15px;line-height:18px;color:#6d6761;font-weight:700;text-align:center}
+.info-message span,.info-message a{color:#b4ce1b;text-decoration:none}
+	/* END EMPLOYER DASHBOARD CONTENTS */
+	
+	/* BEGIN JOBSEEKER FEEDS CONTENTS */	
+.jobseeker-feeds,.jobseeker-messages,.jobseeker-talentpools,.employer-active-profile,.employer-messages,.employer-talentpools,.employer-analytics,.jobseeker-directories,.employer-profile,.jobseeker-profile{padding-bottom:36px}
+* html .jobseeker-feeds{padding:0}
+* html .jobseeker-messages{padding:0}
+* html .jobseeker-feeds .col2-row{margin:36px 0 36px}
+* html .jobseeker-messages .col2-row{margin:36px 0 36px}
+.rss-feed-icon{float:left;width:auto;margin:7px 8px 0 0px}	
+.js-feeds-left-lists{height:532px;margin:0;padding-bottom:4px}
+.jobseeker-feeds .left-list-area{padding-top:4px}
+.feeds-left-btn-links,.btn-links{clear:both;width:270px;margin:16px 0 0 17px;overflow:hidden}
+.feeds-left-btn-links a,.btn-links a{display:block;float:left;width:110px;height:28px;margin-right:13px;background:url(../images/link-button-bgs-sprite.png) no-repeat 0 0;font-size:13px;font-weight:700;text-align:center;line-height:28px;text-decoration:none;color:#fff}
+.feeds-left-btn-links a{ background-position:0 -100px}
+.feeds-left-btn-links a.most-relevant:hover,.feeds-left-btn-links a.most-relevant-active{ background-position:0 0px}
+.feeds-left-btn-links a.categories-link-btn,.btn-links a.categories-link-btn{background-position:0 -100px}
+.feeds-left-btn-links a.categories-link-btn:hover{ background-position:0 -200px}
+
+.second-col{float:right;width:732px;padding:0 0 0 17px}
+
+.second-col-mainbox-wrap{clear:both;width:732px;position:relative}
+.hr-edit-feeds-tab{position:absolute;right:-1px;top:288px;z-index:2}
+.second-col-mainbox-corner{float:left;width:auto;margin:0;position:relative;z-index:1}
+.second-col-mainbox{float:left;width:695px;padding:0 10px 2px 5px;background:url(../images/second-col-mainbox-y.png) repeat-y;position:relative;z-index:3}
+
+.second-col-mainbox-row{clear:both;width:695px;height:640px;overflow:hidden}
+.second-col-mainbox-row,.item-rightcol-inner{background:url(../images/vertical-divider-y.gif) repeat-y 344px 0}
+.second-col-mainbox-row .latest-feeds{margin-top:6px}
+.second-col-mainbox-row .latest-feeds-box{margin:0}
+.mainbox-row-left{float:left;width:332px;padding-left:13px;margin:0}
+.second-col-mainbox-row .first-feedbox{margin-top:0}
+.mainbox-row-right{float:right;width:280px}
+
+.second-col .up-down-scroller{background:none;padding:0 0 0 300px}
+	/* END JOBSEEKER FEEDS CONTENTS */
+	
+	/* BEGIN JOBSEEKER MESSAGES CONTENTS */
+.messages-icon{float:left;width:auto;margin:7px 8px 0 0px}
+.messages-box-container{clear:both;width:298px;height:600px;margin-top:12px;overflow:hidden}
+.messages-box-wrap{width:281px;margin-top:-1px;padding-left:17px;position:relative}
+.newandactive-box{background:#e3e0dc}
+
+.new-sticker{position:absolute;left:1px;top:18px;z-index:1}
+.small-orrange-arrow,.small-purple-arrow{position:absolute;right:1px;top:22px;z-index:1}
+
+.jobseeker-messages .second-col{width:735px;padding-left:14px}
+.jobseeker-messages .second-col-mainbox-wrap{width:735px}
+.jobseeker-messages .second-col-mainbox{width:720px;padding:0 10px 2px 5px;background:url(../images/js-message-right-box-y.png) repeat-y}
+.grey-speechbox-wrap{float:left;width:586px;margin:-8px 0 0 0px;padding-left:15px}
+.grey-speechbox-corners,.white-speechbox-corners{float:left;width:auto;margin:0}
+.grey-speechbox{float:left;width:550px;padding:0 20px 0 16px;background:url(../images/grey-speechbox-y.png) repeat-y}
+.jobseeker-messages .second-col .fixed-area{clear:both;height:516px;overflow:hidden}
+
+.white-speechbox-wrap{float:left;width:586px;margin:-8px 0 0 0px;padding-left:121px}
+.white-speechbox{float:left;width:550px;padding:0 20px 0 16px;background:url(../images/white-speechbox-y.png) repeat-y}
+.first-box{margin-top:0}
+
+.box-leftpart{float:left;width:96px}
+.box-rightpart{float:left;width:454px;font-size:11px;line-height:13px}
+.box-rightpart p{clear:both;margin:0;padding:5px 0 5px;line-height:13px;color:#827f79}
+
+.company-logo{clear:both;width:84px;height:64px;padding:0 0 0 3px;border:1px solid #c1bdb8;background:#fffffe;overflow:hidden}
+.company-logo img{float:left;width:auto;margin:0}
+
+.jobseeker-photo-holder{clear:both;width:84px;height:64px;position:relative;overflow:hidden}
+.jobseeker-photo-holder img{float:left;width:auto;margin:0;position:relative;z-index:1}
+
+.speeh-heading{clear:both;width:454px;padding-bottom:5px;border-bottom:1px solid #936bb2;overflow:hidden;color:#936bb2}
+.speeh-heading span,.speeh-heading dfn{font-style:normal;float:left;width:auto}
+.speeh-heading dfn{float:right}
+.white-speechbox .speeh-heading{color:#ff7900;border-bottom:1px solid #ff7900}
+.jobseeker-messages .second-col .up-down-scroller{background:none;padding:3px 0 0 325px}
+
+.imgshape-top-left,.imgshape-top-right,.imgshape-btm-left,.imgshape-btm-right{width:3px;height:3px;background:url(../images/img-shape-corners.gif) no-repeat 0 0;font-size:3px;line-height:3px;position:absolute;left:0;top:0;z-index:3}
+.imgshape-top-right{background-position:0 -40px;left:auto;right:0}
+.imgshape-btm-left{background-position:0 -80px;top:auto;bottom:0}
+.imgshape-btm-right{background-position:0 -120px;top:auto;left:auto;bottom:0;right:0}
+
+.replybox-container{clear:both;width:735px;margin:12px 0 0;position:relative;z-index:3}
+.replybox-container form{margin:0;padding:0}
+.left-styled-greybox-wrap{float:left;width:733px;margin:0;padding:0;position:relative;z-index:3}
+.left-styled-greybox-corner,.left-styled-orange-box-corner{float:left;width:auto;margin:0;position:relative;z-index:1}
+.left-styled-greybox{float:left;width:692px;padding:0 0 0 41px;min-height:70px;background:url(../images/left-style-grey-box-y.png) repeat-y;position:relative;z-index:2}
+* html .left-styled-greybox{height:auto !important;height:70px}
+.txt-reply-and-arrow{position:absolute;left:12px}
+.txt-reply-textbox{clear:both;width:657px;height:60px;padding:5px 3px 5px 10px;border:1px solid #d1cdc7;background:#fffffe;overflow:hidden}
+.txt-reply-textbox textarea,.left-message-box div textarea{float:left;width:657px;max-width:657px;height:60px;max-height:60px;margin:0;padding:0;border:0;background:none;font-size:12px;font-family:Arial;line-height:17px;color:#ccc;font-weight:700}
+
+.send-btn{width:61px;height:30px;margin:0;padding:0;border:0;background:url(../images/send-btn.png) no-repeat 0 -7px;position:absolute;bottom:-20px;right:21px;cursor:pointer}
+* html .send-btn{bottom:-22px}
+	/* END JOBSEEKER MESSAGES CONTENTS */
+	
+	/* BEGIN LOGIN STEP1, STEP6  CONTENTS */
+.login-step1,.login-step6,.login-step5,.login-step7,.login-step2,.login-step3,.login-step4{width:1074px;padding:38px 0 38px}
+.login-step1-contents,.login-step6-contents,.login-step5-contents,.login-step7-contents,.login-step2-contents,.login-step3-contents,.login-step4-contents{clear:both;width:984px;margin:0 auto;overflow:hidden}
+.login-step1-contents h2,.login-step6-contents h2,.login-step5-contents h2,.login-step7-contents h2,.login-step2-contents h2,.login-step3-contents h2,.login-step4-contents h2{clear:both;margin:0;padding:0;font-size:25px;line-height:28px;color:#827f79}
+.btns-container{clear:both;width:984px;margin-top:95px;padding:0}
+.left-btn{float:left;width:447px;margin:0}
+.left-btn a,.right-btn a{display:block;width:447px;height:380px;background:url(../images/jobseeker-btn-sprite.png) no-repeat 0 0}
+.right-btn{float:right;width:447px;margin:0}
+.right-btn a{background:url(../images/employer-btn-sprite.png) no-repeat 0 0}
+.hr-divider{float:left;width:90px;height:313px;margin-top:33px;background:url(../images/vertical-divider-y.gif) repeat-y 43px 0}
+.btns-bottom-spacer{clear:both;height:124px}
+.login-step6-contents .left-btn a{background:url(../images/now-btn-sprite.png) no-repeat 0 0}
+.login-step6-contents .right-btn a{background:url(../images/later-btn-sprite.png) no-repeat 0 0}
+.btns-container a:hover,.btns-container a.active{background-position:0 -500px}
+	/* END LOGIN STEP1, STEP6  CONTENTS */
+	
+	/* BEGIN LOGIN STEP5 CONTENTS */
+.login-step5-contents{width:984px}	
+	
+.confirmation-payment-box-wrap{clear:both;width:582px;margin:18px auto 0}
+.confirmation-payment-box-corners{float:left;width:auto;margin:0}	
+.confirmation-payment-box{clear:both;width:561px;min-height:200px;padding:0 0 0 21px;background:url(../images/confirmation-payment-box-y.png) repeat-y}
+.confirmation-payment-box h3{clear:both;margin:0;padding:0;font-size:13px;line-height:18px;color:#93b210}
+* html .confirmation-payment-box{height:auto !important;height:200px}
+.confirmation-title-bar{clear:both;width:504px;height:36px;padding:0 15px;border:1px solid #fffffe;background:#e3e0dc}
+.confirmation-title-bar strong{display:block;float:left;width:auto;margin-top:8px;font-size:15px;line-height:20px;color:#93b210}
+.secure-transaction{float:right;width:158px;margin-top:8px}
+.secure-transaction img{float:left;width:auto;margin:0 7px 0 0}
+.secure-transaction a{float:left;width:auto;margin:0;font-size:14px;line-height:20px;color:#1e5e9e;font-weight:700}
+.secure-transaction a:hover{text-decoration:none}
+
+.payment-details,.source-of-funds,.pay-or-cancel-btn-wrap{clear:both;width:500px;margin-left:16px;padding:15px 0;overflow:hidden}
+.payment-details dl{clear:both;width:500px;margin:14px 0 0;padding:0;overflow:hidden}
+.payment-details dt{float:left;width:500px;margin:0;font-size:12px;line-height:15px;color:#99958c}
+.payment-details dt strong,.payment-details dt span{display:block;float:left;width:100px;text-align:right;padding-right:10px}
+.payment-details dt span{width:380px;text-align:left}
+.payment-details dt span a{color:#99958c;text-decoration:none}
+.payment-details dt span a:hover{text-decoration:underline}
+
+.source-of-funds{font-size:12px;line-height:15px;color:#99958c}
+.source-of-funds h3{padding-bottom:5px}
+.sourceof-funds-description{clear:both;width:500px;padding:5px 0 0}
+.sourceof-funds-description a{color:#1e5e9e}
+.sourceof-funds-description a:hover{text-decoration:none}
+
+.pay-or-cancel-btn-wrap{margin-top:10px}
+.pay-or-cancel-btn-wrap div{clear:both;width:400px;overflow:hidden}
+.pay-or-cancel-btn-wrap div a{display:block;float:left;width:66px;height:23px;margin-right:12px;text-align:center;font-size:12px;line-height:23px;color:#fff;font-weight:700;text-decoration:none;background:url(../images/smallest-link-btn-bg-sprite.png) no-repeat 0 0}
+.pay-or-cancel-btn-wrap div a.pay-btn{background-position:0 -100px}
+.paypal-securtiy-info{display:block;clear:both;padding:22px 0;font-size:11px;color:#99958c;line-height:14px}
+.confirmation-payment-btm-spacer{height:45px;clear:both}
+	/* END LOGIN STEP5 CONTENTS */
+	
+	/* BEGIN LOGIN STEP2 CONTENTS */
+.confirmation-box-wrap{clear:both;width:835px;margin:185px auto 0;overflow:hidden}
+.confirmation-box-corners{float:left;width:auto;margin:0}
+.confirmation-box-main{float:left;width:766px;height:207px;background:url(../images/big-striped-box-x2.png) repeat-x}
+.confirmation-box-main h1{clear:both;margin:50px 0 0 5px;padding:0;font-size:40px;line-height:44px;color:#93b210;text-align:center}
+.confirmation{clear:both;margin:17px 0 0 5px;font-size:25px;line-height:30px;color:#99958c;font-weight:700;text-align:center}
+.confirmation-btm-spacer{clear:both;height:180px}
+
+.login-step2-contents{width:1000px}
+.account-type-selection-row{clear:both;width:1030px;margin-top:50px;padding-bottom:38px;overflow:hidden}
+.account-type-selection-col{float:left;width:315px;margin:0 25px 0 0}
+.account-type-selection-box-wrap{clear:both;width:315px;overflow:hidden;position:relative;z-index:2}
+.account-type-selection-box-corner{float:left;width:auto;margin:0}
+.account-type-selection-box-main{float:left;width:300px;padding:0 10px 0 5px;min-height:418px;background:url(../images/account-type-selection-box-y.png) repeat-y}
+* html .account-type-selection-box-main{height:auto !important;height:418px}
+
+.title-area,.choose-btn-wrap{clear:both;width:268px;margin-left:16px;padding-bottom:17px;overflow:hidden}
+.title-area div{clear:both;width:250px;height:30px;margin-left:2px;padding:0 6px;border:1px solid #fff;background:#b5b2a9 url(../images/title-medium-height-x.gif) repeat-x;font-size:15px;line-height:30px;color:#fff;font-weight:700}
+.benefit-rows{clear:both;width:300px;overflow:hidden}
+.benefit-rows ul{float:left;width:300px;margin:0;padding:5px 0 0;list-style:none}
+.benefit-rows li{float:left;width:253px;margin:0;padding:4px 19px 4px 28px;background:url(../images/small-grey-bullet.gif) no-repeat 18px 10px;line-height:16px;font-size:13px;font-weight:700;color:#827f79}
+.benefit-rows li.grey-back{background-color:#e3e0dc}
+.benefit-rows li span{display:block;float:left;width:auto}
+.benefit-rows li img{float:right;width:auto;margin:0}
+
+.choose-btn-wrap{padding:0;margin-top:5px;background-position:left top;padding-top:15px}	
+.choose-btn-wrap a{display:block;clear:both;width:110px;height:28px;margin:0 auto;background:url(../images/green-btn.png) no-repeat;font-size:13px;font-weight:700;line-height:28px;color:#fff;text-align:center;text-decoration:none}
+
+.voucher-code-box{clear:both;width:223px;height:48px;margin:-20px 0 0 20px;padding:18px 18px 0 14px;background:url(../images/voucher-code-box-bg.png) no-repeat;overflow:hidden;position:relative;z-index:1}
+.voucher-code{clear:both;width:223px;height:30px;overflow:hidden}
+
+.voucher-code span{display:block;float:left;width:100px;text-align:right;padding:0 7px 0 0;font-weight:700;line-height:24px;color:#fff}
+.voucher-code div{float:left;width:85px;height:21px;padding:1px 5px 0;border:1px solid #d1cdc7;background:#fffffe}
+.voucher-code div input{float:left;width:85px;height:20px;margin:0;padding:0;border:0;background:none;font-size:11px;line-height:19px;font-weight:700;color:#cfcfcf;font-family:Arial}
+	/* END LOGIN STEP2 CONTENTS */
+	
+	/* BEGIN JOBSEEKER TALENT POOLS  CONTENTS */
+* html .jobseeker-talentpools{padding:0}
+* html .jobseeker-talentpools .col2-row{margin:36px 0 36px}
+
+.jobseeker-talentpools-lists{clear:both;height:476px;padding-bottom:4px;overflow:hidden}	
+.jobseeker-talentpools .left-list-area{padding-top:4px}
+.jobseeker-talentpools .left-list-area ul{padding-top:0}
+
+.talentpools-icon{float:left;width:auto;margin:4px 8px 0 0px}	
+.btn-links a.requests-btn{background-position:0 -100px}
+.btn-links a.requests-btn-active,.btn-links a.requests-btn:hover{background-position:0 -200px}
+.btn-links a.mypools-btn{background-position:0 -100px}
+.btn-links a.mypools-btn:hover{background-position:0 -300px}
+.employer-talentpools .btn-links a.request-btn:hover {
+    background-position: 0 -200px;
+}
+.jobseeker-talentpools .btn-links a.mypools-btn:hover,.jobseeker-talentpools .btn-links a.mypools-btn-active{background-position:0 0px}
+.jobseeker-talentpools .btn-links a.requests-btn:hover,.jobseeker-talentpools .btn-links a.requests-btn-active{background-position:0 -200px}
+
+.filter-by{clear:both;width:268px;margin:15px 0 0 15px;padding-bottom:14px;position:relative;z-index:3}
+.filter-by strong{display:block;float:left;width:auto;padding:2px 8px 0 0;font-size:13px;line-height:20dpx;color:#ff7900}
+.dropdown-container{float:left;width:128px;margin:0}
+.dropdown-container select{float:left;width:130px;height:24px;font-size:12px;color:#99958c;font-weight:700;font-family:Arial}
+
+.left-bottom-info{clear:both;width:264px;margin-left:15px;padding:6px 0 8px 4px;font-size:13px;line-height:18px;font-weight:700;background-position:left top}
+.left-bottom-info span{color:#b4ce1b}
+
+.jobseeker-talentpools .second-col-mainbox-wrap{margin-top:7px}
+.jobseeker-talentpools .first-main-box{margin-top:0}
+.jobseeker-talentpools .second-col-mainbox{width:700px;padding:0 10px 2px 5px;background:url(../images/talentpools-box-y.png) repeat-y}
+.jobseeker-talentpools .second-col .up-down-scroller{width:384px;padding-left:302px}
+.fixed-height-area{clear:both;width:732px;height:684px;overflow:hidden}
+
+.delete-btn,.cv-btn,.leave-btn{position:absolute;right:-4px;top:16px}
+.view-more-btn{position:absolute;right:-4px;top:72px}
+
+.item-rows{float:left;width:700px;min-height:124px;position:relative;z-index:3}
+* html .item-rows{height:auto !important;height:124px}
+.add-to-favourites{width:145px;position:absolute;right:6px;top:-7px;line-height:16px;font-size:10px}
+.add-to-favourites a{display:block;float:right;width:auto;padding-right:22px;text-decoration:none;color:#93b210 ;background:url(../images/star-sprite.png) no-repeat right 0}
+.add-to-favourites a:hover,.add-to-favourites a.active{background-position:right -98px}
+
+.item-leftcol{float:left;width:188px;margin:0;padding:0 0 0 18px}
+.item-rightcol{float: right;width:494px}
+
+.item-img-holder{clear:both;width:159px;height:111px;padding:6px 0 0 19px;background-position:0 -200px;overflow:hidden}
+.item-img-logo{clear:both;width:138px;height:104px;border:1px solid #d1cdc7;background:#fffffe;overflow:hidden;text-align:center}
+.item-img-logo img{margin:0}
+
+.item-rightcol-inner{clear:both;width:485px;min-height:110px;margin:4px 0 0;background-position:190px 0}
+* html .item-rightcol-inner{height:auto !important;height:110px}
+.item-rightcol-inner h4{clear:both;margin:0;padding:0px;font-size:13px;line-height:18px;color:#936bb2}
+.company-description,.details{clear:both;width:185px;padding-top:4px;font-size:11px;color:#827f79;line-height:13px}
+.item-rightcol-inner-left{float:left;width:190px;margin:0}
+.item-rightcol-inner-right{float:right;width:275px;padding:0 0 0 20px}
+.details{width:275px}
+
+.up-down-scroller strong{display:block;float:right;text-align:right;width:230px;padding-top:5px;font-size:13px;line-height:18px;color:#6d6761}
+	/* END JOBSEEKER TALENT POOLS  CONTENTS */
+
+	/* BEGIN EMPLOYER ACTIVE PROFILE CONTENTS */
+* html .employer-active-profile{padding:0}
+* html .employer-active-profile .col2-row{margin:36px 0 36px}
+.employer-active-profile .left-list-area{padding-top:4px}
+.employer-active-profile .left-list-area ul{padding-top:0}
+.active-profile-directories-icon{float:left;width:auto;margin:5px 8px 0 0px}
+
+.btn-links a.matches-btn{background-position:0 -100px}
+.btn-links a.cactagories-btn{background-position:0 -100px}
+
+.btn-links a.matches-btn:hover,.btn-links a.matches-btn-active,.btn-links a.cactagories-btn:hover,.btn-links a.cactagories-btn-active,.btn-links a.export-btn:hover,.btn-links a.email-btn:hover{background-position:0 -200px}
+.employer-active-profile .second-col-mainbox-wrap{margin-top:7px}
+.employer-active-profile .first-main-box{margin-top:0}
+.employer-active-profile .second-col-mainbox{width:700px;padding:0 10px 2px 5px;background:url(../images/talentpools-box-y.png) repeat-y}
+.employer-active-profile .second-col .up-down-scroller{width:384px;padding-left:302px}
+
+.employer-active-profile .btn-links a.requests-btn-active,.employer-active-profile .btn-links a.request-btn:hover{ background-position:0 -200px}
+
+.left-search-panel{clear:both;margin:13px 0 0 0px;padding:0 0 0 17px;overflow:hidden}
+.left-search-panel strong{display:block;float:left;width:auto;padding:0 15px 0 0;font-size:12px;line-height:22px;color:#99958c}
+.left-search-panel div{float:left;width:185px;height:21px;padding:1px 6px 0;border:1px solid #d1cdc7;background:#fffffe}
+.left-search-panel div input{float:left;width:185px;height:19px;margin:0;padding:0px 0 2px;border:0;background:none;font-size:12px;font-family:Arial;line-height:19px;color:#d1cdc7}
+
+.employer-active-profile-lists{clear:both;height:502px;overflow:hidden}
+.employer-active-profile .btn-links{width:268px;padding-bottom:12px}
+.employer-active-profile .item-rightcol-inner-right{padding:18px 0 0 20px}
+.employer-active-profile .item-rightcol-inner h4{color:#ff7900}
+.employer-active-profile .item-img-holder{background-position:0 0px}
+	/* END EMPLOYER ACTIVE PROFILE CONTENTS */
+		
+	/* BEGIN EMPLOYER MESSAGE CONTENTS */
+* html .employer-messages{padding:0}
+* html .employer-messages .col2-row{margin:36px 0 36px}
+.employer-messages .second-col{width:735px;padding-left:14px}
+
+.employer-messages .second-col-mainbox-wrap{width:735px;position:relative;z-index:2}
+.employer-messages .second-col-mainbox{width:720px;padding:0 10px 2px 5px;background:url(../images/js-message-right-box-y.png) repeat-y}
+.fixed-higted-area{clear:both;height:328px;overflow:hidden}
+
+.msg-box-left{float:left;width:94px;margin-top:1px}
+.msg-box-left-photo-holder{clear:both;width:83px;height:48px;position:relative;overflow:hidden}
+
+.photo-top-left,.photo-top-right,.photo-btm-left,.photo-btm-right{width:4px;height:4px;background:url(../images/left-small-image-corners.png) no-repeat 0 0;line-height:4px;font-size:4px;position:absolute;z-index:2}
+.photo-top-right{background-position:0 -50px;left:auto;right:0}
+.photo-btm-left{background-position:0 -100px;top:auto;bottom:0}
+.photo-btm-right{background-position:0 -150px;top:auto;left:auto;bottom:0;right:0}
+* html .photo-top-right{right:-1px}
+* html .photo-btm-left{bottom:-1px}
+* html .photo-btm-right{bottom:-1px;right:-1px}
+.photos{clear:both;width:83px;height:48px;overflow:hidden;position:relative;z-index:1}
+.photos img{float:left;width:auto;margin:0}
+
+.filterby-panel{clear:both;width:268px;margin:5px 0 0 17px;padding-bottom:12px;overflow:hidden}
+.filterby-panel strong{display:block;float:left;width:auto;margin:7px 0 0;padding-right:17px;font-size:13px;line-height:16px;color:#936bb2}
+.filterby-panel div{float:left;width:auto;margin:0}
+.filterby-panel div span{display:block;float:left;width:auto;padding:8px 15px 0 4px;font-size:12px;color:#99958c;line-height:16px;font-weight:700}
+.filterby-panel input{float:left;width:auto}
+
+.employer-messages .left-column .messages-box-container{height:429px;margin-top:12px;overflow:hidden}
+.title-thin{clear:both;width:250px;height:22px;margin:10px 0 4px 17px;padding:0 6px;font-size:12px;line-height:22px;color:#fff;font-weight:700;border:1px solid #fffffe;background:#b5b2a9 url(../images/title-thin-x.gif) repeat-x}
+.box-txt{clear:both;font-size:11px;line-height:13px;color:#827f79}
+
+.with-margin-top{margin-top:28px}
+.send-message-box{margin-top:0px}
+
+.left-message-box{float:left;width:375px}
+.left-message-box div{clear:both;width:350px;height:110px;margin:0;padding:5px 3px 5px 10px;overflow:hidden;border:1px solid #d1cdc7;background:#fffffe}
+.left-message-box div textarea{width:350px;max-width:350px;height:110px;max-height:110px}
+.right-box-contents{float:right;width:316px}
+
+.rounded-box-wrap{clear:both;width:282px;min-height:100px;padding:10px 0 10px 12px;border:1px solid #d1cdc7;background:#fffffe}
+* html .rounded-box-wrap{height:auto !important;height:100px}
+
+.chekbox-and-dropdown{float:left;width:282px;margin:0;padding:0}
+
+.chekbox-elemnt{float:left;width:136px;margin-top:4px}
+.chekbox-elemnt strong{display:block;float:left;padding:5px 5px 0 0;font-size:12px;line-height:20px;color:#99958c}
+.chekbox-elemnt input{float:left;width:auto}
+.rounded-box-dropdown{float:left;width:auto}
+
+.chekbox-and-dropdown .dropdown-container{margin-top:5px}
+
+.yes-no-options-wrap{clear:both;width:282px;padding-top:14px;overflow:hidden}
+.yes-no-options-wrap strong,.url-text-entry strong{display:block;float:left;width:auto;padding:0;font-size:12px;color:#99958c;line-height:15px}
+.yes-no-btns{float:left;width:auto;padding:0 0 0 27px}
+.yes-no-btns a{display:block;float:left;width:16px;height:15px;margin:0 8px 0 0}
+.yes-no-btns a.yes-btn{background:url(../images/yes-btn-sprite.gif) no-repeat 0 0}
+.yes-no-btns a.no-btn{background:url(../images/no-btn-sprite.gif) no-repeat 0 0}
+.yes-no-btns a:hover,.yes-no-btns a.active{background-position:0 -100px}
+
+.url-text-entry{clear:both;width:282px;margin-top:14px;overflow:hidden}
+.url-text-entry strong{width:80px;line-height:24px}
+.url-text-entry div{float:left;width:176px;height:21px;padding:0px 5px 1px;background:#fffffe;border:1px solid #d1cdc7}
+.url-text-entry div input{float:left;width:176px;height:21px;margin:0;padding:0;background:none;border:0;font-family:Arial;color:#d1cdc7;font-size:12px;line-height:20px}
+	/* END EMPLOYER MESSAGE CONTENTS */
+	
+	/* BEGIN EMPLOYER TALENt POOLS CONTENTS */
+* html .employer-talentpools{padding:0}
+* html .employer-talentpools .col2-row{margin:36px 0 36px}
+
+.employer-talentpools-lists{clear:both;height:476px;padding-bottom:4px;overflow:hidden}	
+.employer-talentpools .left-list-area{padding-top:4px}
+.employer-talentpools .left-list-area ul{padding-top:0}
+	
+.employer-talentpools .second-col-mainbox-wrap{margin-top:7px}
+.employer-talentpools .first-main-box{margin-top:0}
+.employer-talentpools .second-col-mainbox{width:700px;padding:0 10px 2px 5px;background:url(../images/talentpools-box-y.png) repeat-y}
+.employer-talentpools .second-col .up-down-scroller{width:384px;padding-left:302px}	
+	
+.employer-talentpools .btn-links a.request-btn{background-position:0 -100px}
+.employer-talentpools .btn-links a.requests-btn-active{background-position:0 -200px}
+.employer-talentpools .btn-links a.mypools-btn{background-position:0 -100px}
+.employer-talentpools .btn-links a.mypools-btn-active,.employer-talentpools .btn-links a.mypools-btn:hover{background-position:0 -300px}
+.employer-talentpools .filter-by strong{color:#936bb2}
+
+.left-purple-styled-box-wrap{clear:both;width:735px;margin-top:20px}
+.top-margin-less{margin-top:0}
+.purple-styled-box-corner{float:left;width:auto;margin:0;position:relative;z-index:1}
+.purple-styled-box{clear:both;width:700px;padding:0 5px 0 30px;background:url(../images/left-purple-styled-box-y.png) repeat-y;position:relative;z-index:3}
+.talent-pools-preview-row{float:left;width:702px;margin-top:-4px;min-height:46px;background:url(../images/em-talentpools-preview-y.gif) repeat-y}
+* html .talent-pools-preview-row{height:auto !important;height:46px}
+.pools-preview-row-left{float:left;width:176px;margin-top:15px;padding-left:20px;font-size:13px;line-height:18px;font-weight:700;color:#99958c}
+.pools-preview-row-mid{float:left;width:127px;margin-top:15px;font-size:13px;line-height:18px;font-weight:700;text-align:center;color:#99958c}
+.pools-preview-row-mid span{color:#b4ce1b}
+.pools-preview-row-right{float:right;width:357px;margin:13px 0 0;padding-left:20px}
+.pools-preview-row-right a{display:block;float:left;width:98px;height:25px;margin-right:20px;text-align:center;text-decoration:none;color:#fff;font-size:12px;font-weight:700;line-height:25px;background:url(../images/link-button-small-bgs-sprite.png) no-repeat 0 0}
+.pools-preview-row-right a.mail-btn,.pools-preview-row-right a.active,.pools-preview-row-right a:hover{background-position:0 -100px}
+* html .pools-preview-row-right a{margin-right:16px}
+	/* END EMPLOYER TALEN POOLS CONTENTS */
+	
+	/* BEGIN EMPLOYER ANALYTICS CONTENTS */
+* html .employer-analytics{padding:0}
+* html .employer-analytics .col2-row{margin:36px 0 36px}
+.employer-analytics .left-list-area{padding-top:4px}
+.employer-analytics .left-list-area ul{padding-top:0}
+
+.btn-links a.export-btn{background-position:0 -100px}
+.btn-links a.email-btn{background-position:0 -100px}
+.btn-links a.email-btn-active,.btn-links a.export-btn-active{background-position:0 -200px}
+.analytics-icon{float:left;width:auto;margin:6px 8px 0 0px}
+.employer-analytics-lists{clear:both;height:auto;overflow:hidden}
+.employer-analytics .btn-links{width:268px;padding-bottom:12px}
+
+.period{display:block;clear:both;margin-left:17px;padding:17px 0 0;color:#936bb2;font-size:13px;line-height:18px}
+.customizations-head{display:block;clear:both;width:268px;margin:5px 0 0 17px;padding:10px 0 5px;background-position: left top;color:#936bb2;font-size:12px}
+.employer-analytics .col3-mainbox-contents{min-height:654px}
+* html .employer-analytics .col3-mainbox-contents{height:auto !important;height:654px}
+
+.employer-analytics .second-col-mainbox-wrap{margin-top:7px;z-index:1}
+.employer-analytics .first-main-box{margin-top:0;z-index:3}
+.employer-analytics .second-col-mainbox{width:700px;padding:0 10px 2px 5px;background:url(../images/talentpools-box-y.png) repeat-y}
+.visits-graph{clear:both;width:666px;height:140px;margin:0 0 0 17px;overflow:hidden}
+.visits-graph img{float:left;width:auto;margin:0}
+
+.visits-btn,.profile-usage-btn{position:absolute;right:-4px;top:25px}
+.profile-usage-btn{top:22px}
+
+.overview-box-contents{float:left;width:700px;margin:0;padding:0}
+.overview-box-left{float:left;width:511px}
+.overview-box-left .headings{width:411px}
+.overview-box-contents .dropdown-container{float:left;width:164px;margin-top:4px}
+.overview-box-contents .dropdown-container select{width:164px}
+
+.profile-usage-graphs{clear:both;width:680px;padding:0 0 0 20px;overflow:hidden}
+.profile-usage-graphs ul{float:left;width:275px;margin:0;padding:0;list-style:none}
+.profile-usage-graphs li{float:left;width:275px;padding:7px 0 7px}
+.profile-usage-graphs li img{float:left;width:auto;margin:0 12px 0 0}
+.profile-usage-graphs li strong{display:block;float:left;width:auto;margin:4px 0 0;font-size:12px;line-height:15px;color:#827f79}
+.profile-usage-graphs li span{color:#abc247}
+
+.small-boxes-container{clear:both;width:730px;margin-top:17px}
+.boxes-container-left{float:left;width:376px;margin:0}
+.boxes-container-right{float: right;width:354px}
+
+.small-box-wrap{clear:both;width:349px;position:relative}
+.small-box-corners{float:left;width:auto;margin:0;position:relative;z-index:2}
+.small-box-contents{float:left;width:324px;min-height:130px;padding:0 6px 0 19px;background:url(../images/analytics-small-box-y.png) repeat-y;position:relative;z-index:3}
+* html .small-box-contents{height:auto !important;height:130px}
+.boxes-container-right .small-box-wrap{width:337px}
+.boxes-container-right .small-box-contents{width:320px;padding:0 0 0 17px;background:url(../images/small-box-map-overlay-y.png) repeat-y}
+
+.view-report-link{width:auto;font-size:11px;line-height:14px;color:#936bb2;font-weight:700;position:absolute;right:28px;bottom:-3px}
+.view-report-link:hover{text-decoration:none}
+.overlay-map{clear:both;width:202px;height:129px;overflow:hidden}
+.overlay-map img{float:left;width:auto;margin:0}
+
+.traffice-source-btn,.map-overlay-btn{position:absolute;right:-20px;top:23px;z-index:1}
+
+.pie-chart{clear:both;width:303px;margin-top:-8px;padding:0 4px 0 17px;position:relative}
+.pie-chart-left{float:left;width:93px;height:93px;overflow:hidden}
+.pie-chart-left img{float:left;width:auto;margin:0}
+.pie-chart ul{float:right;width:190px;padding:6px 0 0 20px;margin:0;list-style:none}
+.pie-chart li{float:left;width:190px;margin:9px 0 0}
+.pie-chart li img{float:left;width:auto;margin:1px 7px 0 0}
+.pie-chart li strong{display:block;float:left;width:auto;font-size:11px;line-height:14px;color:#827f79}
+	/* END EMPLOYER ANALYTICS CONTENTS */
+
+	/* BEGIN JOBSEEKER DIRECTORRIES CONTENTS */
+* html .jobseeker-directories{padding:0}
+* html .jobseeker-directories .col2-row{margin:36px 0 36px}
+.jobseeker-directories .left-list-area{padding-top:4px}
+.jobseeker-directories .left-list-area ul{padding-top:0}
+.directories-icon{float:left;width:auto;margin:5px 8px 0 0px}
+
+.jobseeker-directories .second-col-mainbox-wrap{margin-top:7px;position:relative;z-index:4}
+.jobseeker-directories .first-main-box{margin-top:0}
+.jobseeker-directories .second-col-mainbox{width:700px;padding:0 10px 2px 5px;background:url(../images/talentpools-box-y.png) repeat-y}
+.jobseeker-directories .second-col .up-down-scroller{width:384px;padding-left:302px}
+
+.jobseeker-directories-lists{clear:both;height:474px;overflow:hidden}
+.jobseeker-directories .btn-links{width:268px}
+.jobseeker-directories .btn-links a.matches-btn:hover,.jobseeker-directories .btn-links a.matches-btn-active{ background-position:0 0}
+
+.jobseeker-directories .item-rightcol-inner-right{padding:18px 0 0 20px}
+.jobseeker-directories .item-rightcol-inner h4{color:#936bb2}
+.jobseeker-directories .item-img-holder{background-position:0 -200px}
+
+.back-btn{position:absolute;right:-4px;top:50px}
+.jobseeker-directories .view-more-btn{top:45px}
+
+.sub-nav{float:left;width:684px;margin:9px 0 -1px 1px;height:31px;padding-left:15px;border-bottom:2px solid #fff;position:relative}
+.sub-nav ul{clear:both;width:684px;height:47px;margin:0;padding:0;position:absolute;left:15px;top:2px;list-style:none}
+.sub-nav li{float:left;width:auto;height:47px;margin-right:4px}
+.sub-nav li a{display:block;float:left;width:144px;height:31px;background:url(../images/sub-nav-btns-bg-sprite.png) no-repeat 0 0;text-decoration:none;font-size:11px;font-weight:700;line-height:30px;color:#fff;text-align:center}
+.sub-nav li a:hover,.sub-nav li.active a{height:47px;background-position:0 -100px}
+
+.expanded-box-part-wrap{clear:both;width:699px;padding:0px 10px 0 6px;background:url(../images/expanded-box-y.png) repeat-y;position:relative;z-index:2}
+.expanded-container{clear:both;width:699px;padding-bottom:30px;background:url(../images/expanded-box-btm-x.gif) repeat-x left bottom}
+.expanded-contents{clear:both;width:699px;padding-top:10px;background:url(../images/expanded-box-top-x.gif) repeat-x}
+
+.bottom-btn-wrap{position:absolute;left:248px;bottom:-22px;z-index:3;width:350px;height:32px;overflow:hidden}
+.bottom-btn-wrap a{display:block;float:left;width:107px;height:21px;margin-right:-4px;padding-top:11px;background:url(../images/bottom-buttons-bg.png) no-repeat;text-align:center;font-size:11px;font-weight:700;line-height:16px;color:#fff;text-decoration:none}
+
+.tab-contents{clear:both;width:686px;padding:0 0 0 13px;position:relative;z-index:1}
+.left-styled-greybox-small-wrap,.left-styled-purple-small-wrap,.left-styled-orange-box-wrap{float:left;width:677px;margin:25px 0 0;padding:0;position:relative;z-index:3}
+.left-styled-greybox-small,.left-styled-purple-box-small,.left-styled-orange-box{float:left;width:636px;padding:0 0 0 41px;background:url(../images/left-style-grey-box-y-small.png) repeat-y;position:relative;z-index:2}
+.txt-keyword,.txt-our-company,.txt-about-me,.txt-references,.txt-my-vault,.txt-my-personal-story{position:absolute;left:12px}
+
+.rounded-white-box{clear:both;width:602px;min-height:54px;padding:0 6px 0px;margin-top:-2px;position:relative;border:1px solid #d1cdc7;background:#fffffe}
+* html .rounded-white-box{height:auto !important;height:54px}
+
+.rounded-white-box-description{clear:both;width:602px;padding:6px 0 7px;font-size:11px;color:#827f79;line-height:13px}
+.rounded-white-box-description dl{clear:both;width:602px;margin:0;padding:0 0 25px}
+.rounded-white-box-description dt{clear:both;width:594px;margin:13px 0 0;padding:0 0 0 8px;background:url(../images/small-bullet.gif) no-repeat 0 5px;color:#827f79;font-weight:700}
+.rounded-white-box-description dt.first-dt{margin-top:0}
+.rounded-white-box-description dd{clear:both;width:602px;margin:0;padding:0}
+
+.left-styled-purple-small-wrap{width:676px}
+.left-styled-purple-box-small{background:url(../images/left-purple-styled-box-y-small.png) repeat-y}
+.left-styled-purple-box-corner{float:left;width:auto;margin:0;position:relative;z-index:1}
+
+.view-other-talent-pools{clear:both;width:636px;padding:10px 0;position:relative}
+.view-other-talent-pools .dropdown-container{width:164px}
+.view-other-talent-pools .dropdown-container select{width:164px}
+.view-other-talent-pools strong{display:block;float:left;width:auto;padding:0 13px 0 0;line-height:24px;color:#936bb2}
+
+.talent-pools-list-titles{clear:both;width:600px;overflow:hidden;padding:5px 0 10px;font-size:13px;line-height:18px;font-weight:700;color:#827f79}
+.talent-pools-list-titles div{float:left;width:150px;padding-right:4px}
+.talent-pools-list-titles span{color:#936bb2}
+.no-margin .rounded-white-box{margin-top:0}
+.rounded-white-box-title{display:block;clear:both;width:500px;padding:8px 0;font-size:13px;line-height:15px}
+.rounded-white-common-box{clear:both;width:602px;padding:0 6px;position:relative;border:1px solid #d1cdc7;background:#fffffe;font-size:11px;line-height:13px;color:#827f79;overflow:hidden}
+.introduction,.description-txt{clear:both;width:602px;padding:2px 0 5px;overflow:hidden}
+
+.upper-zindex{z-index:9}
+	/* END JOBSEEKER DIRECTORRIES CONTENTS */
+	
+	/* BEGIN EMPLOYER PROFILE CONTENTS */
+* html .employer-profile{padding:0}
+.col1-row{float:left;width:1074px;margin:10px 0 0}
+* html .employer-profile .col1-row{margin:36px 0 36px}
+.single-column-contents{clear:both;width:732px;margin:0 auto;padding:0 0 0 17px}
+
+.employer-profile .second-col-mainbox-wrap{margin-top:7px;position:relative;z-index:4}
+.employer-profile .first-main-box{margin-top:0}
+.employer-profile .second-col-mainbox{width:700px;padding:0 10px 2px 5px;background:url(../images/talentpools-box-y.png) repeat-y}
+
+.employer-profile .item-rightcol-inner-right{padding:18px 0 0 20px}
+.employer-profile .item-rightcol-inner h4{color:#936bb2}
+.employer-profile .item-img-holder{background-position:0 -200px}
+
+.save-btn{position:absolute;left:312px;bottom:-22px;z-index:3;width:88px;height:38px;overflow:hidden}
+.save-btn img{float:left;width:auto}
+.vertical-edit-btn{position:absolute;right:-7px;top:50px}
+.hr-edit-btn{position:absolute;right:18px;bottom:-22px;z-index:3}
+
+.employer-profile .view-other-talent-pools{background:url(../images/vertical-divider-y.gif) repeat-y 178px 0}
+.employer-profile .view-other-talent-pools .dropdown-container{margin-right:34px}
+.create-talentpools-btn{display:block;float:left;width:152px;height:25px;margin:0;padding:0 0 0 26px;background:url(../images/create-talentpools-btn.png) no-repeat;line-height:25px;font-size:12px;font-weight:700;color:#fff;text-decoration:none}
+
+.catagories-and-title{float:left;width:610px;padding-bottom:5px}
+.catagories-and-title .dropdown-container{width:130px;margin-right:18px}
+.catagories-and-title .dropdown-container select{width:130px}
+
+.title-entry{float:left;width:400px}
+.title-entry strong{display:block;float:left;width:auto;padding-right:5px;font-size:12px;color:#99958c;line-height:25px}
+.title-entry div{float:left;width:175px;height:21px;padding:1px 5px 1px;border:1px solid #d1cdc7;background:#fffffe}
+.title-entry div input{float:left;width:175px;height:20px;margin:0;padding:0;border:0;background:#fffffe;font-size:11px;line-height:20px;font-weight:700;color:#cfcfcf;font-family:Arial}
+
+.expanded-contents .up-down-scroller{width:370px;padding-left:300px}
+
+.scrolling-highted-area{clear:both;width:auto;height:680px;overflow:hidden}
+.bottom-spacer{clear:both;height:20px;position:relative;z-index:1;overflow:hidden}
+.top-spacer{clear:both;width:600px;height:10px;font-size:8px;line-height:8px}
+
+.view-other-talent-pools{clear:both;width:636px;padding:10px 0;position:relative}
+.view-other-talent-pools .dropdown-container{width:164px}
+.view-other-talent-pools .dropdown-container select{width:164px}
+.view-other-talent-pools strong{display:block;float:left;width:auto;padding:0 13px 0 0;line-height:24px;color:#936bb2}
+	/* END EMPLOYER PROFILE CONTENTS */
+
+	/* BEGIN JOBSEEKER PROFILE CONTENTS */
+* html .jobseeker-profile{padding:0}
+* html .jobseeker-profile .col1-row{margin:36px 0 36px}
+.single-column-contents{clear:both;width:732px;margin:0 auto;padding:0 0 0 17px}
+
+.jobseeker-profile .second-col-mainbox-wrap{margin-top:7px;position:relative;z-index:4}
+.jobseeker-profile .first-main-box{margin-top:0}
+.jobseeker-profile .second-col-mainbox{width:700px;padding:0 10px 2px 5px;background:url(../images/talentpools-box-y.png) repeat-y}
+
+.jobseeker-profile .item-rightcol-inner-right{padding:18px 0 0 20px}
+.jobseeker-profile .item-rightcol-inner h4{color:#ff7900}
+.jobseeker-profile .item-img-holder{background-position:0 0px}
+.jobseeker-profile .view-other-talent-pools{background:url(../images/vertical-divider-y.gif) repeat-y 178px 0}
+.jobseeker-profile .view-other-talent-pools .dropdown-container{margin-right:34px}
+
+.create-talentpools-btn{display:block;float:left;width:152px;height:25px;margin:0;padding:0 0 0 26px;background:url(../images/create-talentpools-btn.png) no-repeat;line-height:25px;font-size:12px;font-weight:700;color:#fff;text-decoration:none}
+
+.jobseeker-profile .sub-nav li a{background:url(../images/jobseeker-subnav-bg-sprite.png) no-repeat 0 0;color:#6d6761}
+.jobseeker-profile .sub-nav li a:hover,.jobseeker-profile .sub-nav li.active a{background-position:0 -100px;color:#fff}
+.jobseeker-profile .bottom-btn-wrap{left:42px;width:160px}
+.jobseeker-profile .bottom-btn-wrap a{width:76px;height:21px;margin-right:-6px;background:url(../images/bottom-buttons-small-bg.png) no-repeat}
+
+.left-styled-orange-box{min-height:50px;background:url(../images/left-style-orange-box-y.png) repeat-y}
+* html .left-styled-orange-box{height:auto !important;height:50px}
+
+.my-vault-list-wrap{clear:both;width:625px;margin:0;padding:0;overflow:hidden}
+.my-vault-list-wrap ul{float:left;width:auto;margin:0;padding:0;list-style:none}
+.my-vault-list-wrap li{clear:both;margin-top:6px;padding-left:22px;background:url(../images/v-bullet.gif) no-repeat 0 0;font-size:11px;line-height:14px;font-weight:700}
+.my-vault-list-wrap li.first-item{margin:0}
+.my-vault-list-wrap li a{color:#827f79}
+.my-vault-list-wrap li a:hover{text-decoration:none}
+.my-vault-list-wrap ul.left-lists{width:200px}
+.my-vault-list-wrap ul.mid-lists{width:230px}
+.my-vault-list-wrap ul.right-lists{width:190px}
+	/* END JOBSEEKER PROFILE CONTENTS */
+	
+	/* BEGIN LOGIN STEP3 CONTENTS */
+.login-step3-contents,.login-step4-contents{width:994px}
+.login-step3-contents h2,.login-step4-contents{padding-left:5px}
+
+.login-step3-main-box-wrap{clear:both;width:994px;margin-top:20px;position:relative;z-index:3}
+.login-step3-main-box-corner{float:left;width:auto;margin:0;position:relative;z-index:3}
+.login-step3-main-box{clear:both;width:970px;padding:0 0 0 24px;background:url(../images/login-large-box-y.png) repeat-y;position:relative;z-index:4}
+.step3-main-box-contents{clear:both;width:945px;min-height:300px;padding:0 0 22px;background:url(../images/vertical-divider-y.gif) repeat-y 400px 0}
+* html .step3-main-box-contents{height:auto !important;height:300px}
+	
+.login-step3-contents form,.login-step4-contents form{margin:0;padding:0}
+.step3-main-box-left{float:left;width:400px;margin:0 2px 0 0;position:relative}
+.step3-main-box-right{float:right;width:498px;padding-left:45px}
+
+.account-section-1{clear:both;width:400px;margin:0;padding:0;position:relative}
+.section-number{position:absolute;left:0;top:0}
+.account-section-1 fieldset{float:left;width:400px;margin:16px 0 0;padding:0;border:0}
+
+.text-entries{float:left;width:400px;margin-top:6px;position:relative;z-index:1}
+.text-entries span,.dropdown-options strong{display:block;float:left;width:182px;padding:3px 9px 0 0;text-align:right;font-size:12px;line-height:22px;font-weight:700;color:#99958c}
+.text-entries span dfn{display:block;font-style:normal;font-weight:400;clear:both;margin-top:-8px}
+.text-entries div,.billing-info-entries div{float:left;width:143px;height:22px;padding:2px 10px 2px;border:1px solid #d1cdc7;background:#fffffe}
+.text-entries div input,.text-entries textarea,.billing-info-entries div input{float:left;width:143px;height:21px;margin:0;padding:0;border:0;background:#fffffe;line-height:21px;font-size:12px;font-weight:700;color:#ccc;font-family:Arial}
+.text-entries div.text-box{width:153px;height:122px;padding:5px 0 5px 10px;overflow:hidden}
+.text-entries textarea{max-width:137px;width:138px;max-height:122px;height:122px;padding-right:15px}
+
+.dropdown-options{float:left;width:400px;margin-top:5px;position:relative}
+.dropdown-options .dropdown-container{float:left;width:166px}
+.dropdown-options .dropdown-container select{width:166px;margin:0}
+
+.next-btn-wrap{clear:both;width:auto;padding-right:44px}
+.login-next-btn{float:right;margin:-21px 0 0;padding:0;width:90px;height:56px;background:url(../images/next-btn.png) no-repeat;border:0;cursor:pointer;z-index:2}
+
+.account-common-sections{clear:both;width:460px;padding:20px 0 10px 33px;overflow:hidden;position:relative}	
+.section-boxes{clear:both;width:430px;min-height:110px;padding:10px;border:1px solid #fffffe;background:#e3e0dc;position:relative}
+* html .section-boxes{height:auto !important;height:110px}
+
+.inner-boxes-wrap{clear:both;width:418px;margin-left:12px;overflow:hidden}
+.inner-boxes-wrap strong{display:block;clear:both;width:164px;padding:0 0 5px;font-size:12px;line-height:14px;color:#827f79}
+
+.inner-boxes-left{float:left;width:165px}
+.inner-boxes-mid{float:left;width:76px;padding-left:12px;margin-top:30px}
+.inner-boxes-right{float:right;width:165px}
+.scroll-box-wrap{clear:both;width:162px;height:85px;padding-top:5px;border:1px solid #d1cdc7;background:#fffffe;overflow:hidden}
+.scroll-box-wrap div{clear:both;width:163px;height:80px;overflow:auto}
+.scroll-box-wrap ul{clear:both;width:137px;margin:0;padding:1px 0 0 9px;list-style:none}
+.scroll-box-wrap li{clear:both;padding:0;font-size:12px;line-height:16px;color:#827f79}	
+.add-btn,.remove-btn{float:left;width:auto;margin:5px 0 0}
+
+.upload-box-wrap{clear:both;width:413px;margin-left:17px;padding:4px 0;overflow:hidden}
+.upload-box-left{float:left;width:155px}
+.upload-box-right{float:right;width:258px}
+
+.picture-holder{width:135px;height:100px;border:2px solid #fffffe;background:#f4f1ed;position:relative}
+.picture-holder .left-top,.picture-holder .right-top,.picture-holder .left-bottom,.picture-holder .left-bottom,.picture-holder .right-bottom{width:10px;height:10px;background:url(../images/login-white-corners-sprite.gif) no-repeat 0 0;line-height:8px;font-size:8px;position:absolute;left:-2px;top:-2px;z-index:3}
+.picture-holder .right-top{background-position:0 -100px;left:auto;right:-2px}
+* html .picture-holder .right-top{right:-3px}
+.picture-holder .left-bottom{background-position:0 -200px;top:auto;bottom:-2px}
+.picture-holder .right-bottom{background-position:0 -300px;top:auto;left:auto;right:-2px;bottom:-2px}
+* html .picture-holder .right-bottom{right:-3px}
+
+.picture-holder .photo-frame{clear:both;width:135px;height:100px;overflow:hidden}
+
+.upload-instructions{clear:both;width:258px;padding:12px 0 3px;font-size:12px;color:#827f79;line-height:14px;overflow:hidden}
+.upload-instructions em{color:#ff7900;font-style:normal}
+.upload-instructions span{display:block;float:left;width:100px;font-size:12px;line-height:23px;font-weight:700}
+.btns-holder{float:left;width:auto}
+.btns-holder div{float:left;width:66px;height:23px;background:url(../images/browse-btn.gif) no-repeat;margin-right:11px;position:relative;overflow:hidden;cursor:pointer}
+.btns-holder div input{position:absolute;opacity:0;filter:alpha(opacity=0);cursor:pointer;right:0;top:0}
+.btns-holder input.upload-btn{float:left;width:66px;height:23px;margin:0;border:0;background:url(../images/upload-btn-orange.gif) no-repeat 0 0;cursor:pointer}
+.documentsection{margin-top:15px}
+
+.dark-grey-strip{position:absolute;width:450px;padding:11px 0;background:url(../images/dark-grey-strip-repeat.png) repeat;overflow:hidden;font-size:17px;line-height:22px;color:#fff;font-weight:700;text-align:center;left:-99999px;top:44px;z-index:3}
+.inactve .upload-box-wrap{opacity:0.4;filter:alpha(opacity=40)}
+.inactve .dark-grey-strip{left:0}
+*:first-child+html .inactve .picture-holder{filter:alpha(opacity=40)}
+
+.employer-section .btns-holder input.upload-btn{background:url(../images/upload-btn.gif) no-repeat}
+.employer-section .upload-instructions em{color:#936bb2}
+	/* END LOGIN STEP3 CONTENTS */
+	
+	/* BEGIN LOGIN STEP4 CONTENTS */
+.login-step4-contents .login-step3-main-box-wrap{margin-top:0px}
+.login-step4 .sub-nav{border:0;height:28px;padding-left:20px;margin-top:22px;z-index:4}
+.login-step4 .sub-nav ul{clear:both;width:684px;height:43px;top:3px;left:20px}
+.login-step4 .sub-nav li{height:43px;margin-right:7px}
+.login-step4 .sub-nav li a{width:140px;height:28px;background:url(../images/jobseeker-subnav-bg-sprite.png) no-repeat 0 0;line-height:28px;color:#6d6761}
+.login-step4 .sub-nav li a:hover,.login-step4 .sub-nav li.active a{height:43px;background-position:0 -100px;color:#fff}
+
+.login-step4 .login-step3-main-box{clear:both;width:973px;padding:20px 0 0 21px;z-index:4}
+.login-step4 .step3-main-box-contents{clear:both;width:950px;padding:8px 0 10px;margin-top:8px;background-position:468px 0}
+.login-step4 .step3-main-box-left{width:468px}
+.login-step4 .step3-main-box-right{width:455px;padding-left:25px}
+
+.grey-bar{clear:both;width:916px;padding:10px 16px;border:1px solid #fff;background:#e3e0dc;color:#99958c;font-size:15px;line-height:18px;overflow:hidden}
+.grey-bar span{color:#93b210}
+.grey-bar strong{float:left;width:auto;margin:0}
+.grey-bar strong.right{float:right}
+
+.form-top{clear:both;width:450px;padding:0 0 0 18px;font-weight:700;line-height:20px}
+.form-top span{display:block;clear:both;padding-bottom:2px;font-size:15px}
+
+.billing-info{clear:both;width:460px;margin-top:20px}
+.billing-info-top{clear:both;width:442px;padding:0 0 0 18px;overflow:hidden}
+.billing-info-top em{display:block;clear:both;padding-bottom:3px;font-size:13px;line-height:18px;color:#93b210;font-weight:700;font-style:normal}
+.billing-info .dropdown-options{clear:both;width:440px}
+.billing-info .dropdown-options strong{width:130px;padding-top:0px}
+.billing-info .dropdown-options strong.wider-left{width:148px}
+.billing-info-entries{float:left;width:460px;margin-top:6px;position:relative;z-index:1}
+.billing-info-entries span{display:block;float:left;width:148px;padding:3px 9px 0 0;text-align:right;font-size:12px;line-height:22px;font-weight:700;color:#99958c}
+.billing-info-entries div{width:246px}
+.billing-info-entries div input{float:left;width:246px}
+
+.billing-info-entries div.small-entries{width:25px;padding:2px 8px 2px;margin-right:6px}
+.billing-info-entries div.small-entries input{width:25px}
+.billing-info-entries dfn{display:block;float:left;width:auto;padding:3px 6px 0 0;font-style:normal;font-size:12px;color:#99958c;line-height:22px;font-weight:700}
+.what-is-this-link{display:block;float:left;width:auto;margin-top:5px;color:#1e5e9e}
+
+.billing-info-entries div.cards{border:0;background:none}
+.billing-info-entries div.cards img{float:left;width:auto;margin:0 6px 0 0}
+.payment-method{clear:both;width:440px;margin:0;overflow:hidden}
+.payment-method dfn{display:block;float:left;width:130px;padding:7px 9px 0 0;text-align:right;color:#99958c;font-size:12px;line-height:18px;font-weight:700;font-style:normal}
+
+.chek-wrap{float:left;width:285px}
+.chek-wrap div.FL{float:left;width:280px}
+.chek-wrap div.styled-check-Items span{background:url(../images/green-check-btn-sprite.gif) no-repeat 0 0}
+.chek-wrap input{float:left}
+.chek-wrap-description{float:left;width:250px;padding:9px 0 0 5px;font-size:12px;line-height:15px;color:#99958c}
+.chek-wrap-description a{color:#1e5e9e}
+.chek-wrap-description a:hover,.what-is-this-link:hover{text-decoration:none}
+
+.paypall-security-bar{clear:both;width:381px;margin:0;padding:7px 19px 7px 16px;border:1px solid #e3e0dc;background:#fffffe;overflow:hidden}
+.paypall{float:left;width:auto;margin:0}
+.bar-right{float:right;width:auto}
+.bar-right img{float:right;width:auto;margin:2px 0 0}
+.bar-right a{display:block;float:right;width:auto;margin:4px 0 0 6px;color:#1e5e9e;font-size:14px;line-height:18px;font-weight:700}
+.bar-right a:hover{text-decoration:none}
+
+.paypall-login-area{float:left;width:455px;margin:16px 0 0}
+.paypall-login-area em{font-style:normal;display:block;clear:both;padding:0 0 0 15px;color:#93b210;font-size:13px;line-height:18px;font-weight:700}
+.paypall-login-area .section-boxes{margin-top:5px}
+
+.paypall-login-contents{clear:both;width:420px;margin-left:4px;overflow:hidden}
+.paypall-login-contents .billing-info-entries{width:420px}
+.paypall-login-contents .billing-info-entries span{width:61px}
+.password-reset-links{clear:both;width:420px;padding:8px 0 0;font-size:12px;line-height:18px;color:#827f79;overflow:hidden}
+.password-reset-links a{color:#1e5e9e}
+.password-reset-links a:hover{text-decoration:none}
+.paypall-login-btn{float:left;width:66px;height:23px;margin:16px 0 0;border:0;background:url(../images/login-btn.gif) no-repeat;cursor:pointer}
+	/* END LOGIN STEP4 CONTENTS */
+	
+	/* BEGIN FOOTER */
+.footer-container-home{clear:both;min-width:1074px;width:auto!important;min-height:189px;background:#47433e url(../images/home-footer-container-x.gif) repeat-x;position:relative;z-index:5}
+* html .footer-container-home{height:auto !important;height:189px}
+.footer-container{clear:both;min-width:1074px;width:auto!important;min-height:41px;background:#47433e url(../images/footer-container-x.gif) repeat-x;position:relative;z-index:5}
+* html .footer-container{height:auto !important;height:41px}
+.footer-bottom-separator-line{clear:both;width:993px;height:33px;margin:8px auto 0;background:url(../images/home-footer-bottom-separator-line-x.gif) repeat-x left bottom;position:relative;z-index:2}
+
+.our-clients-container{clear:both;width:993px;margin:0 auto;min-height:75px;padding-top:30px;position:relative;z-index:1}
+* html .our-clients-container{height:auto !important;height:75px}
+.clients-tab-container{clear:both;width:988px;height:23px;padding-left:5px;background:url(../images/home-footer-top-separator-line-x.gif) repeat-x;overflow:hidden}
+.clients-tab{disply:block;float:left;width:89px;height:21px;padding-top:2px;background:#322f2b url(../images/our-clients-tab-bg.png) no-repeat;font-size:11px;line-height:20px;color:#b5b2a9;font-weight:700;text-align:center}
+
+.slider-container{clear:both;width:986px;height:35px;overflow:hidden;margin-top:17px;padding-left:7px}
+.left-scroller,.right-scroller{float:left;width:13px;height:35px;background:url(../images/left-arrow-sprite.gif) no-repeat 0 0;cursor:pointer}
+.right-scroller{background:url(../images/right-arrow-sprite.gif) no-repeat 0 0}
+.left-scroller:hover,.right-scroller:hover{background-position:0 -100px}
+
+.sliding-panel{float:left;width:954px;height:35px;position:relative;margin:0;overflow:hidden}
+.sliding-tray{position:absolute;width:924px;height:35px;padding-left:30px;overflow:hidden;left:0;top:0}
+.sliding-tray div{float:left;width:924px;height:35px}
+.sliding-tray img{float:left;width:auto;margin:0 27px 0 0}
+
+.footer{clear:both;width:993px;min-height:43px;margin:0 auto;font-size:11px;line-height:15px;position:relative;z-index:3}
+* html .footer{height:auto !important;height:43px}
+
+.copyright{float:left;width:255px;padding:14px 0 0 5px;color:#d1cdc7}
+.copyright span{display:block;float:left;line-height:15px;padding-right:8px}
+.copyright img{float:left;width:auto;margin:0}
+.footer-nav{float:left;width:610px;margin:0;padding:0}
+.footer-nav ul{clear:both;width:610px;margin:0;padding:14px 0 0 2px;list-style:none}
+.footer-nav li{float:left;width:auto;padding:0 13px;font-size:11px;line-height:15px}
+.footer-nav li a{color:#d1cdc7;text-decoration:none}
+.footer-nav li a:hover,.footer-nav li.active a{color:#b4ce1b}
+
+.international{float:right;width:120px;margin:14px 0 0px;padding-bottom:1px;position:relative}
+.international span{display:block;clear:both;background:url(../images/icon-globe-sprite.gif) no-repeat 10px 2px;position:relative;z-index:3}
+.international span:hover,.international-dropbox span{background-position:10px -98px}
+.international span a{display:block;clear:both;padding:0 0 0 28px;background:url(../images/international-arrow-sprite.gif) no-repeat 100px 4px;font-size:11px;color:#d1cdc7;font-weight:700;text-decoration:none;line-height:15px}
+.international span a:hover,.international-dropbox span a{color:#b4ce1b;background-position:100px -96px}
+
+.international ul{width:164px;height:220px;margin:0;padding:13px 0 0;background:url(../images/international-dropbox.png) no-repeat;position:absolute;left:-99999px;top:-214px;list-style:none;z-index:2;overflow:hidden}
+.international-dropbox ul{left:-44px}
+.international li{clear:both;margin:1px 0 0}
+.international li a{display:block;clear:both;width:138px;padding:0 13px;font-size:12px;line-height:17px;color:#fff;text-decoration:none}
+.international li a:hover,.international li.active a{background:#6b675c}
+	/* END FOOTER */
+	
+.border-radius2{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}
+.border-radius5{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+.border-radius12{-moz-border-radius:12px;-webkit-border-radius:12px;border-radius:12px}
+
+	/* SCROLLING STYLES */
+.iindev-custom-scroller{position:relative}
+.iindev-custom-scroller-inner-wrap{overflow:hidden;position:absolute;left:0;top:0}
+	/* SCROLLING STYLES */
+
+	/* BEGIN DROPDOWN CUSTOMIZATION STYLES */
+.customDropdownContainer{float:left;width:auto;position:static;z-index:9999}
+.customDropdown{position:relative;background: url(../images/custom-dropdown-x.gif) repeat-x}
+.customDropdown .ul-head{clear:both;overflow:hidden;position:relative;height:24px;background: url(../images/custom-dropdown-left.gif) no-repeat left top}
+.customDropdown span{padding:0 4px 0 9px;display:block;height:24px;line-height:23px;font-size:12px;color:#99958c;font-weight:700;overflow:hidden;cursor:default}
+.customDropdown div.customDropdownArrow{width:25px;height:24px;background:#d1cdc7 url(../images/customdropdown-arrow.gif) no-repeat;cursor:default;position:absolute;top:0;right:0}
+.customDropdown ul{position:absolute;left:0px;top:26px;margin:0;padding:0;overflow:hidden;background:url(../images/custom-dropdown-list-x.png) repeat-x left bottom;list-style:none}
+.customDropdown ul li{float:left;padding:2px 6px 2px 14px;font-size:12px!important;line-height:17px;color:#fff;font-weight:400!important;cursor:default}
+.customDropdown ul li:hover,.customDropdown ul li.selected{background:#848073}
+
+	/* NEWLY EDITED */
+.dropdown-container .ul-head{}
+.dropdown-container ul{padding:5px 0;top:26px}
+.dropdown-container ul.dropdown-ul{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+	/* END DROPDOWN CUSTOMIZATION STYLES */
+
+	/* BEGIN CHECKBOX CUSTOMIZATION STYLES */
+div.styled-check-Items{width:17px;height:24px;display:block;font-size:9px;line-height:9px;margin:0 auto;padding:0;overflow:hidden;position:relative}
+div.styled-check-Items input{}
+div.styled-check-Items span{width:17px;height:21px;display:block;background:url(../images/purple-checkbox-status-sprite.gif) no-repeat 0 0;margin:0;padding:0;font-size:9px;line-height:9px;overflow:hidden;position:absolute;top:3px;left:0px;z-index:2}
+	/* END CHECKBOX CUSTOMIZATION STYLES */
+	
+	/* BEGIN MODALS */
+.modal-container{position:absolute;left:-99999px;top:0px;z-index:99}
+
+.successful-payment-box-wrap{clear:both;width:501px;height:124px;position:relative}
+.next-btn{position:absolute;display:block;width:90px;height:56px;background:url(../images/next-btn.png) no-repeat;right:22px;bottom:-34px;z-index:2}
+.successful-payment-box-inner{clear:both;width:501px;height:124px;position:relative;z-index:3}
+.successful-payment-box-corners,.edit-referral-box-corners{float:left;width:auto;margin:0}
+.successful-payment-box-main{float:left;width:466px;height:124px;padding:0;background:url(../images/successful-payment-box-x.png) repeat-x}
+.successful-payment-box-main-txt{clear:both;width:460px;text-align:center;margin-top:34px;font-size:15px;line-height:22px;font-weight:700;color:#99958c}
+.successful-payment-box-main-txt strong{display:block;clear:both;font-size:20px;line-height:28px;color:#93b210}
+
+.edit-referral-box-wrap{clear:both;width:501px;height:400px;position:relative}
+.edit-referral-box-inner{clear:both;width:501px;height:400px;position:relative;z-index:3;overflow:hidden}
+.edit-referral-box-main{float:left;width:455px;height:378px;padding:10px 0 12px 10px;background:url(../images/edit-referral-box-x.png) repeat-x}
+.edit-referral-box-inner,.cv-modal-box-inner form,.profile-save-modal-inner form{margin:0;padding:0}
+
+.modal-close-btn{position:absolute;right:17px;top:-24px;z-index:2}
+.referral-description-area{clear:both;width:442px;padding-top:12px;overflow:hidden}
+.referral-description-area em{display:block;clear:both;width:440px;margin:0;padding:0 0 5px;font-style:normal;font-size:12px;line-height:16px;font-weight:700;color:#827f79}
+
+.rounded-box{clear:both;width:430px;min-height:50px;padding:0 5px;border:1px solid #d1cdc7;background:#fffffe}
+* html .rounded-box{height:auto !important;height:50px}
+.referral-check-wrap{clear:both;width:425px;padding:4px 0 0 5px;overflow:hidden}
+.referral-check-wrap div.chekitem{clear:both;width:425px;overflow:hidden}
+.referral-check-wrap input{float:left;width:auto}
+.referral-check-wrap strong{float:left;width:auto;padding:8px 0 0 5px;line-height:14px;font-size:12px}
+.referral-check-wrap .bottom-spacer{height:52px}
+
+.referral-description{clear:both;padding:7px 0;color:#827f79;font-size:11px;line-height:14px}
+.referral-description .bottom-spacer{height:12px;line-height:8px;font-size:8px}
+
+.email-entry-box-wrap{clear:both;width:442px}
+.email-entry-box-wrap div{float:left;width:165px;height:22px;padding:0px 10px;background:#fffffe;border:1px solid #d1cdc7}
+.email-entry-box-wrap div input{float:left;width:165px;height:20px;margin:0;padding:0px;background:#fffffe;border:0;line-height:19px;font-size:12px;color:#d1cdc7;font-family:Arial}
+.referral-send-btn{float:right;width:77px;height:28px;margin:0;padding:0;border:0;background:url(../images/send-btn-orange.png) no-repeat;cursor:pointer}
+
+.cv-modal-box-wrap,.profile-save-modal-box-wrap{clear:both;width:503px;height:124px;position:relative}
+.cv-modal-box-wrap .modal-close-btn,.profile-save-modal-box-wrap .modal-close-btn{top:-22px}
+.cv-modal-box-inner{clear:both;width:481px;height:104px;padding:10px 0 10px 21px;background:url(../images/striped-medium-back-box.png) no-repeat;position:relative;z-index:3;overflow:hidden}
+.cv-modal-box-contents{clear:both;width:454px;height:100px;overflow:hidden}
+.modal-top-txt{clear:both;width:444px;padding:8px 5px;font-size:13px;line-height:18px;color:#827f79}
+
+.cv-options{clear:both;width:454px;margin:0;padding:0;overflow:hidden}
+.cv-options-left{float:left;width:200px;margin:9px 0 0}
+.check-options{float:left;width:200px;margin-top:-4px}
+.check-options div.styled-check-Items span,.profile-options-left div.styled-check-Items span{background:url(../images/orange-check-btn-sprite.png) no-repeat 0 0}
+.check-options input{float:left;width:auto}
+.check-options strong{display:block;float:left;width:66px;padding-top:8px;font-size:12px;line-height:16px;color:#99958c}
+
+.cv-options-right{float:right;width:254px;margin-top:21px}
+.cv-options-right strong{display:block;float:left;width:auto;padding:5px 14px 0 0;font-size:12px;line-height:18px}
+.browse-cv{float:left;width:77px;height:29px;margin-right:21px;padding:0;background:url(../images/browse-medium-btn.png) no-repeat;cursor:pointer;position:relative}
+.browse-cv input{position:absolute;right:0;top:0;opacity:0;filter:alpha(opacity=0)}
+.orange-save-btn,.green-save-btn{float:right;width:77px;height:28px;margin:0;background:url(../images/save-btn-orange-midium.png) no-repeat;border:0;cursor:pointer}
+
+.profile-save-modal-inner{clear:both;width:481px;height:104px;padding:10px 0 10px 21px;background:url(../images/striped-medium-back-box.png) no-repeat;position:relative;z-index:3}
+.profile-save-modal-contents{clear:both;width:454px;height:100px}
+
+.profile-options{float:left;width:454px;margin:0}
+.profile-options-left{float:left;width:370px;margin:16px 0 0}
+.profile-options-left input{float:left;width:auto}
+.profile-options em{display:block;float:left;width:auto;padding:8px 8px 0 0;font-size:12px;line-height:18px;font-weight:700;font-style:normal;color:#99958c}
+.profile-options-left strong{display:block;float:left;width:auto;padding:8px 6px 0 0;font-size:12px;line-height:18px;color:#99958c}
+
+.live-or-discreet-option{float:left;width:117px;position:relative}
+.single-option{float:left;width:38px}
+.help-btn{float:left;width:auto;margin:9px 0 0;cursor:pointer}
+
+.green-save-btn{margin-top:20px;background:url(../images/save-btn-green-midium.png) no-repeat}
+
+.help-popup{width:186px;position:absolute;top:30px;left:-99999px;right:auto}
+.help-popup-head{clear:both;width:156px;height:31px;padding:0 15px;background:url(../images/modal-popup-list-box-head.png) no-repeat;font-size:13px;line-height:31px;color:#fff;font-weight:700 }
+.help-popup-corner{float:left;width:auto;margin:0}
+
+.help-popup ul{clear:both;width:170px;margin:0;padding:4px 6px 2px 10px;background:url(../images/modal-popup-list-box-repeat.png) repeat;list-style:none}
+.help-popup li{clear:both;margin:5px 0 0;padding:0 0 0 6px;background: url(../images/small-white-bullet.gif) no-repeat 0 5px;font-size:12px;line-height:14px;color:#fff}
+
+.modal-container .signup-login-box-wrapper{margin:0}
+.modal-container .signup-login-right{margin-top:25px}
+	/* END MODALS  */
+	
+.profile-detail .bottom-btn-wrap{left:235px;width:300px}
+.profile-detail .bottom-btn-wrap a{width:107px;height:21px;margin-right:-6px;background:url(../images/bottom-buttons-bg.png) no-repeat}
+.profile-detail .bottom-btn-wrap a.larger-btn{width:144px;background:url(../images/larger-btn.png) no-repeat}
+
+.profile-detail .sub-nav li a{background:url(../images/jobseeker-subnav-bg-sprite.png) no-repeat 0 0;color:#6d6761}
+.profile-detail .sub-nav li a:hover,.profile-detail .sub-nav li.active a{background-position:0 -100px;color:#fff}
+
+.profile-detail .my-vault-list-wrap{background:url(../images/vault-divider-y.gif) repeat-y -12px 0}
+.profile-detail .my-vault-list-wrap ul.left-lists{width:170px;margin-right:30px}
+.profile-detail .my-vault-list-wrap ul.mid-lists{width:200px;margin-right:35px}
+
+.btn-links a.mypools-btn{background-position:0 -100px}
+.btn-links a.request-btn{background-position:0 -100px}
+.btn-links a.mypools-btn-active,.btn-links a.mypools-btn-active{background-position:0 -200px}
+
+.company-talentpools-detail .view-other-talent-pools{background:url(../images/vertical-divider-y.gif) repeat-y 410px 0}
+.company-talentpools-detail .expanded-container{padding-bottom:0}
+.company-talentpools-detail .left-styled-greybox-small-wrap,.company-talentpools-detail .left-styled-purple-small-wrap{margin-top:10px}
+.company-talentpools-detail .first-box{margin-top:25px}
+.company-talentpools-detail .talent-pools-preview-row{width:636px;background:url(../images/vertical-divider-y.gif) repeat-y 240px 0}
+.company-talentpools-detail .pools-preview-row-left{width:220px}
+.company-talentpools-detail .pools-preview-row-right{float:right;width:363px;padding-left:27px}
+.company-talentpools-detail .expanded-contents .up-down-scroller{background:url(../images/divider-line-x.gif) repeat-x;width:372px;padding:4px 0 0 300px}
+.scrolling-area-container{clear:both;height:634px;overflow:hidden;position:relative}
+.company-talentpools-detail .jobseeker-directories-lists{ height:480px}
+
+.company-talentpools-detail .btn-links a.mypools-btn:hover,.company-talentpools-detail .btn-links a.mypools-btn-active,.jobseeker-directories .btn-links a.mypools-btn:hover,.jobseeker-directories .btn-links a.mypools-btn-active{background-position:0 0px}
+.company-talentpools-detail .btn-links a.requests-btn:hover,.company-talentpools-detail .btn-links a.requests-btn-active,.jobseeker-directories .btn-links a.requests-btn:hover,.jobseeker-directories .btn-links a.requests-btn-active{background-position:0 -200px}
